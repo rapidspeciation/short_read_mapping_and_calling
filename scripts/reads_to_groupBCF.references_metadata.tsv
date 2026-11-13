@@ -1,0 +1,2 @@
+reference_id	reference_path	masked_rm2_bed	busco_exons_metaeuk_bed	busco_exons_helixer_bed	busco_exons_braker3_bed
+ref01	<path_to_ref01_fasta>	<path_to_ref01_masked_rm2_bed>	<path_to_ref01_busco_exons_metaeuk_bed>	<path_to_ref01_busco_exons_helixer_bed>	<path_to_ref01_busco_exons_braker3_bed>

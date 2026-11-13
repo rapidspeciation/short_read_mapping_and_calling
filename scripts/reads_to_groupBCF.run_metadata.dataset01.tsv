@@ -1,0 +1,7 @@
+sequence_id	specimen_id	library_id	path
+seq01	AA001	AA001_lib01	<path_to_seq01_raw_read_cram>
+seq02	AA001	AA001_lib01	<path_to_seq02_raw_read_cram>
+seq03	AA001	AA001_lib02	<path_to_seq03_raw_read_cram>
+seq04	AA002	AA002_lib01	<path_to_seq01_raw_read_cram>
+seq04	AA002	AA003_lib01	<path_to_seq01_raw_read_cram>
+seq04	AA002	AA004_lib01	<path_to_seq01_raw_read_cram>

@@ -1,0 +1,21 @@
+
+### B1 and C1 resources, one entry per dataset_prefix.
+
+cram:
+  - dataset_prefix: dataset01
+    B1_filter_map_memory: 'lambda wildcards, attempt: 50000 * attempt'
+    B1_filter_map_queue: 'lambda wildcards, attempt: "normal" if attempt == 1 else "long"'
+    C1_process_cram_memory: 'lambda w, attempt: (20000 if n_runs_for(w) == 1 else 60000) * attempt'
+    C1_process_cram_queue: 'lambda wildcards, attempt: "normal" if attempt == 1 else "long"'
+
+
+### D1 and E(1-5) resources, one entry per dataset_prefix and bcf_subset combination.
+
+bcf:
+  - dataset_prefix: dataset01
+    bcf_subset: bcfsubset01
+    D1_call_variants_memory: 'lambda wildcards, attempt: 3000 * attempt'
+    D1_call_variants_queue: 'lambda wildcards, attempt: "normal" if attempt == 1 else "long"'
+    E_bcf_stats_memory: 'lambda wildcards, attempt: 800 * attempt'
+    E_bcf_stats_queue: 'lambda wildcards, attempt: "normal" if attempt == 1 else "long"'
+

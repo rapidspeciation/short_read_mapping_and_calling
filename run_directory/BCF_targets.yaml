@@ -1,0 +1,9 @@
+- dataset_prefix: dataset01
+  reference_id: ref01
+  bcf_subset: bcfsubset01
+  bcf_callgroup: callgroup01
+  specimens:
+    - AA001
+    - AA002
+    - AA003
+    - AA004
